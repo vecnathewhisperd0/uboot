@@ -180,10 +180,6 @@ NANDTGTS \
 #if defined(CONFIG_SPI)
 /* SPI Flash */
 /* Environment */
-#elif defined(CONFIG_ENV_IS_IN_MMC)
-#define CONFIG_SYS_MMC_ENV_DEV		1
-#define CONFIG_SYS_MMC_ENV_PART		2
-
 #elif defined(CONFIG_ENV_IS_IN_NAND)
 /* No NAND env support in SPL */
 #define CONFIG_SYS_ENV_SECT_SIZE	CONFIG_ENV_SIZE
